@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+View a live demo at: https://sanity-stripe-shop-website.vercel.app/
+
 ## Getting Started
 
 First, run the development server:
