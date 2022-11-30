@@ -1,36 +1,59 @@
+# FINE Headphones - A Next.js Ecommerce Website with Sanity Database and Stripe Payment support.
+
+![Shop Website](https://i.imgur.com/IxJNVQ6.png)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 View a live demo at: https://sanity-stripe-shop-website.vercel.app/
 
-## Getting Started
+Features Include:
+- Viewing the top charting songs and artists around the world or specific to your region.
+- The ability to filter songs by genre and view similar music related to your selection.
+- Search bar that allows you to search for both songs and artists.
+- A fully functional music player built into the app that allows you to listen to any song found.
+- Custom song pages with full lyrics and artist pages with albums.
+- A fully responsive app viewable on both desktop and mobile devices.
 
-First, run the development server:
+## Setup
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+To set up a development environment, please follow these steps:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Clone the repo
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+   ```shell
+    git clone https://github.com/connorpaps/sanity-stripe-shop-website.git
+   ```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+2. Change directory to the project directory
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+    ```shell
+    cd sanity-stripe-shop-website
+    ```
 
-## Learn More
+3. Install the dependencies
+   
+    ```shell
+     npm install
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+    If you get an error, please check the console for more information.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    If you don't get an error, you are ready to start development.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. Run the app
+   
+    ```shell
+    npm run dev
+    ```
 
-## Deploy on Vercel
+    Project will be running in the browser.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    
+4. Update .env api key
+   
+    - Create a .env file at the root if not already there.
+    - Add NEXT_PUBLIC_SANITY_TOKEN, NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY, and NEXT_PUBLIC_STRIPE_SECRET_KEY
+    - API keys can be obtained from https://www.sanity.io/manage and https://stripe.com/ by signing up and creating new projects.
+    - Restart the local server by closing it and running npm run dev in the terminal again.
+  
