@@ -16,11 +16,7 @@ const Cart = () => {
   const cartRef = useRef();
   const { totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuantity, onRemove} = useStateContext();
 
-
-  console.log(cartItems)
-
   // backend request to obtain the current cart items and pass them on to stripe checkout
-
   const handleCheckout = async () => {
     const stripe = await getStripe();
 

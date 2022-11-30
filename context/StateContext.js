@@ -20,6 +20,7 @@ export const StateContext = ({children}) => {
     let foundProduct;
     let index;
 
+    // handles adding products from their product page to the cart
     const onAdd = (product, quantity) => {
         // check if product adding is already in the cart using cartItems state
         const checkProductInCart = cartItems.find((prodItem) => prodItem._id === product._id);
@@ -56,9 +57,7 @@ export const StateContext = ({children}) => {
         setTotalPrice((prevTotalPrice) => prevTotalPrice-foundProduct.price * foundProduct.quantity);
         setTotalQuantities(prevTotalQuantities => prevTotalQuantities - foundProduct.quantity);
         setCartItems(newCartItems);
-
     }
-
 
     // function to edit the quantity of a product in the cart
     const toggleCartItemQuantity = (id, value) => {
@@ -87,7 +86,6 @@ export const StateContext = ({children}) => {
             }           
         }
     }
-
 
     // functions to increase and decrease quantity of a product page item
     const incQty = () => {
@@ -122,5 +120,6 @@ export const StateContext = ({children}) => {
         </Context.Provider>
     )
 }
+
 // allows to use state in other components similar to a hook
 export const useStateContext = () => useContext(Context);
