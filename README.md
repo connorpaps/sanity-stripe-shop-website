@@ -1,4 +1,4 @@
-# FINE Headphones - A Next.js Ecommerce Website with Sanity Database and Stripe Payment support.
+# FINE Headphones - A Next.js Ecommerce Website using Sanity.io and Stripe Payments.
 
 View a live demo at: https://sanity-stripe-shop-website.vercel.app/
 
