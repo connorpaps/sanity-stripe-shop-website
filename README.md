@@ -1,18 +1,17 @@
 # FINE Headphones - A Next.js Ecommerce Website with Sanity Database and Stripe Payment support.
 
+View a live demo at: https://sanity-stripe-shop-website.vercel.app/
+
 ![Shop Website](https://i.imgur.com/IxJNVQ6.png)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-View a live demo at: https://sanity-stripe-shop-website.vercel.app/
-
 Features Include:
-- Viewing the top charting songs and artists around the world or specific to your region.
-- The ability to filter songs by genre and view similar music related to your selection.
-- Search bar that allows you to search for both songs and artists.
-- A fully functional music player built into the app that allows you to listen to any song found.
-- Custom song pages with full lyrics and artist pages with albums.
-- A fully responsive app viewable on both desktop and mobile devices.
+- A fully functioning ecommerce shop with products, a shopping cart, and real payment support.
+- Easily add, edit, or remove products live through sanity manager.
+- Checkout payment support with shipping and card processing through stripe.
+- Shop includes a main store page with individual product detail pages for each product.
+- Products can be added to a shopping cart accessable anywhere on the website.
 
 ## Setup
 
